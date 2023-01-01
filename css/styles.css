@@ -88,10 +88,12 @@ h1 {
 h2 {
   text-align: center;
 }
-
+.coffee-shops {
+  display: inline-flex;
+  text-align: center;
+}
 .coffee-image {
   width: 250px;
-  flex: auto;
 }
 footer {
     background-color: #333;
