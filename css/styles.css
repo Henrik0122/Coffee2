@@ -77,10 +77,22 @@ nav a:hover::before {
 main {
   min-height: 100%;
   display: grid;
+  grid-auto-columns: 100% repeat(3, 1fr);
+  grid-auto-rows: 100px repeat(5, 1fr);
 }
 
+h1 {
+  text-align: center;
+}
 
+h2 {
+  text-align: center;
+}
 
+.coffee-image {
+  width: 250px;
+  flex: auto;
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -121,14 +133,16 @@ footer {
     margin: 0 0 8px 0;
   }
 
-  /*.grid-container {
-    border: 4px solid black;
-    display: grid;
-    grid-auto-columns: 100px repeat(3, 1fr);
-    grid-auto-rows: 100px repeat(2, 1fr);
-  }
+.grid-top {
+  display: grid;
+  row-gap: 100px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
-  .grid-item {
-    border: 2px solid mediumvioletred;
-    padding: 10px;
-  }
+@media screen and (min-width:750px){
+  
+}
